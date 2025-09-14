@@ -36,7 +36,6 @@
 
 <script setup>
   import MyButton from './UI/MyButton.vue'
-
 </script>
 
 <style scoped>
@@ -65,12 +64,22 @@
   color: #FAFAFA;
 }
 
+.header__nav{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: #FAFAFA;
+  font-family: Arial, sans-serif;
+}
+
 .header__title{
   margin: 0;
   color:#F1CDB3;
   font-size: 32px;
   font-weight: 400;
-  line-height: 110.00000000000001%;
+  line-height: 110%;
+  letter-spacing: 6%;
+  font-family: Georgia, sans-serif;
 }
 
 .header__subtitle{
@@ -79,7 +88,9 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 100%;
+  letter-spacing: 10%;
   margin-top: 10px;
+  font-family: Arial, sans-serif;
 }
 
 .body{
@@ -106,6 +117,8 @@
   font-size: 44px;
   font-weight: 400;
   line-height: 130%;
+  max-width: 310px;
+  width: 100%;
 }
 
 .body__subtitle{
@@ -115,6 +128,9 @@
   line-height: 160%;
   margin-bottom: 42px;
   margin-right: 42px;
+  font-family: Arial, sans-serif;
+  max-width: 460px;
+  width: 100%;
 }
 
 .body__btn{

@@ -1,7 +1,7 @@
 <template>
     <div class="about">
         <div class="about__container">
-            <img class="about__dogs-img">
+            <img class="about__dogs-img" :src="aboutDogsImg">
             <div class="about__text">
                 <h4 class="about__title">
                     About the shelter “Cozy House”
@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-    
+    import aboutDogsImg from "../assets/images/aboutDogsImg.png"
 </script>
 
 <style scoped>
@@ -34,20 +34,28 @@
 
 .about__dogs-img{
     margin-left: 175px;
+    max-height: 408px;
+    height: 100%;
 }
 
 .about__text{
     margin-left: 120px;
-    margin-top: 14px;
     align-items: center;
     justify-content: space-between;
+    max-width: 430px;
+    width: 100%;
+    margin-top: 14px;
 }
 
 .about__title{
+    margin: 0;
     color: #545454;
     font-size: 35px;
     font-weight: 400;
     line-height: 130%;
+    font-family: Georgia, sans-serif;
+    max-width: 340px;
+    width: 100%;
 }
 
 .about__subtitle{

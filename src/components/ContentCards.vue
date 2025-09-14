@@ -34,9 +34,10 @@
     padding-top: 60px;
     padding-left: 53px;
     display: flex;
-    max-width: 1094px;
+    max-width: 990px;
     width: 100%;
     justify-content: space-between;
+    background-color: #FAFAFA;
 }
 
 </style>
