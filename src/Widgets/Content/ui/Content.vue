@@ -5,26 +5,26 @@
                 Our friends who are looking for a house
             </h5>
             <div class="content__subcontainer">
-                <MyButton class="content__left-btn">
+                <Button class="content__left-btn">
                     <img :src="contentLeftBtn" alt="left">
-                </MyButton>
-                <ContentCards class="contentCards" :petsModalContent="petsModalContent" @openPopup="openPopup"/>
-                <MyButton class="content__right-btn">
+                </Button>
+                <PetsGallery class="contentCards" :petsModalContent="petsModalContent" @openPopup="openPopup"/>
+                <Button class="content__right-btn">
                     <img :src="contentRightBtn" alt="right">
-                </MyButton>
+                </Button>
             </div>
-            <MyButton class="content__btn">
+            <Button class="content__btn">
                 Get to know the rest
-            </MyButton>
+            </Button>
         </div>
     </div>
 </template>
 
 <script setup>
-    import ContentCards from './ContentCards.vue'
-    import MyButton from './UI/MyButton.vue'
+    import Button from '../Shared/ui/Button.vue'
     import contentLeftBtn from '../assets/images/contentLeftBtn.png'
     import contentRightBtn from '../assets/images/contentRightBtn.png'
+    import PetsGallery from '../../PetsGallery/ui/PetsGallery.vue'
 
     const props = defineProps({
         petsModalContent:{

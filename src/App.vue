@@ -6,22 +6,22 @@
     <Help/>
     <Donate/>
     <Footer/>
-    <MyModal v-for="petModalContent in petsModalContent" v-show="petModalContent.modalShowStatus" :key="petModalContent.id" v-model:modalShowStatus="petModalContent.modalShowStatus">
+    <Modal v-for="petModalContent in petsModalContent" v-show="petModalContent.modalShowStatus" :key="petModalContent.id" v-model:modalShowStatus="petModalContent.modalShowStatus">
       <PetModalContent :petModalContent="petModalContent" :key="petModalContent.id" @closePopup="closePopup"/>
-    </MyModal>
+    </Modal>
   </div>
 </template>
 
 <script setup>
-  import Header from './components/Header.vue';
-  import About from './components/About.vue';
-  import Content from './components/Content.vue';
+  import Header from './Entities/Header/ui/Header.vue';
+  import About from './Entities/About/ui/About.vue';
+  import Content from './Widgets/Content/ui/Content.vue';
   import { petsModalContent } from './data/petsInfo'
-  import Help from './components/Help.vue';
-  import Donate from './components/Donate.vue';
+  import Help from './Entities/Help/ui/Help.vue';
+  import Donate from './Entities/Donate/ui/Donate.vue';
   import Footer from './components/Footer.vue';
-  import MyModal from './components/UI/MyModal.vue';
-  import PetModalContent from './components/PetModalContent.vue';
+  import Modal from './Shared/ui/Modal.vue';
+  import PetModalContent from './Widgets/PetModalContent/ui/PetModalContent.vue';
 
   const openPopup = function(popupID) {
     let currentPopup = petsModalContent.find(item => item.id === popupID);

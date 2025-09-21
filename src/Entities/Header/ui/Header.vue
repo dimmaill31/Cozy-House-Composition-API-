@@ -6,18 +6,18 @@
           <p class="header__subtitle">Shelter for pets in Boston</p>
         </div>
         <nav class="header__navigates">
-          <MyButton class="header__nav">
+          <Button class="header__nav">
             About the shelter
-          </MyButton>
-          <MyButton class="header__nav">
+          </Button>
+          <Button class="header__nav">
             Our pets
-          </MyButton>
-          <MyButton class="header__nav">
+          </Button>
+          <Button class="header__nav">
             Help the shelter
-          </MyButton>
-          <MyButton class="header__nav">
+          </Button>
+          <Button class="header__nav">
             Contacts
-          </MyButton>
+          </Button>
         </nav>
       </div>
       <div class="body">
@@ -25,9 +25,9 @@
           <div class="body__info">
             <h3 class="body__title">Not only people need a house</h3>
             <p class="body__subtitle">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-            <MyButton class="body__btn">
+            <Button class="body__btn">
               Make a friend
-            </MyButton>
+            </Button>
         </div>
       </div>
     </div>
@@ -35,7 +35,7 @@
 </template>
 
 <script setup>
-  import MyButton from './UI/MyButton.vue'
+  import Button from '../Shared/ui/Button.vue'
 </script>
 
 <style scoped>

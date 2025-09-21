@@ -45,7 +45,7 @@
 </template>
 
 <script setup>
-    import MyButton from './UI/MyButton.vue';
+    import MyButton from '../Shared/ui/Button.vue';
     import popupCloseBtn from '../assets/images/popupCloseBtn.png'
 
     const props = defineProps({

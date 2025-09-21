@@ -2,17 +2,17 @@
     <div>
         <Swiper class="content__cards" :slides-per-view="3" :space-between="0">
             <SwiperSlide v-for="petModalContent in petsModalContent" :key="petModalContent.id">
-                <ContentCard :key="petModalContent.id" :petModalContent="petModalContent" @openPopup="openPopup"/>
+                <PetCard :key="petModalContent.id" :petModalContent="petModalContent" @openPopup="openPopup"/>
             </SwiperSlide>
         </Swiper>
     </div>
 </template>
 
 <script setup>
-    import ContentCard from './ContentCard.vue';
     import { Swiper, SwiperSlide } from 'swiper/vue';
     import 'swiper/css';
     import 'swiper/css/navigation';
+    import PetCard from '../../PetCard/ui/PetCard.vue';
 
     const props = defineProps({
         petsModalContent: {

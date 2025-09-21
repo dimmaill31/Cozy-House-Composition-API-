@@ -38,7 +38,7 @@
     import footerBostonImg from '../assets/images/footerBostonImg.png'
     import footerLondonImg from '../assets/images/footerLondonImg.png'
     import footerDogImg from '../assets/images/footerDogImg.png'
-    import MyButton from './UI/MyButton.vue'
+    import MyButton from '../Shared/ui/Button.vue'
 </script>
 
 <style scoped>

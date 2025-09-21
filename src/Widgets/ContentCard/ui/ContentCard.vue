@@ -4,14 +4,14 @@
         <p class="content__card-text">
             {{ petModalContent.name }}
         </p>
-        <MyButton class="content__card-btn" @click="openPopup">
+        <Button class="content__card-btn" @click="openPopup">
             Learn more
-        </MyButton>
+        </Button>
     </div>
 </template>
 
 <script setup>
-    import MyButton from './UI/MyButton.vue'
+    import Button from '../Shared/ui/Button.vue'
     const props = defineProps({
         petModalContent: {
             type: Object,
